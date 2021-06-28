@@ -1,0 +1,18 @@
+<div class="container">
+
+        {{#each users}}
+        
+                    {{nombre}} {{apellido}} <br>
+                    {{edad}} <br>
+                    {{#if redes}}
+                    {{redes}}
+                    {{else}}
+                    (no tiene)
+                    {{/if}}
+                    <p>
+                    {{frase}}
+                    </p>
+        {{/each}}
+        
+    </div>
+</div>

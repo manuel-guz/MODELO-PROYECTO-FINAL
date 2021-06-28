@@ -1,0 +1,41 @@
+body {
+  background-color: rgb(245, 243, 243);
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-image: url(../images/BG1.jpg)  ;
+  background-size: 100% ;
+  background-repeat: no-repeat;
+  backdrop-filter: blur(2px);
+}
+
+
+.clients_table{
+  margin-right: 50%;
+}
+.pagination-clients{
+  margin-right: 50%;
+}
+
+.index-text{
+  margin-right: 50%;
+  
+}
+
+.carousel-index{
+  padding-left: 4%;
+  margin: 90px, 150px;
+  width: 30%;
+  height: 20%;
+}
+
+.login{
+  margin-top: 20%;
+  margin-right: 50%;
+}
+
+#footer{
+  position:relative;
+  width: 100%;
+  bottom: 0%;
+  text-align: center;
+  
+}
