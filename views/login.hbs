@@ -1,14 +1,26 @@
+
+
 <div class="login">
+<form action="/login" method="post">
     <div class="row g-3">
   <div class="col">
-    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre">
+    <input type="text" class="form-control" placeholder="Nombre" aria-label="Nombre" name="nombre">
   </div>
   <div class="col">
-    <input type="email" class="form-control" placeholder="email" aria-label="email">
+    <input type="email" class="form-control" placeholder="email" aria-label="email" name="email">
   </div>
   <div class="col">
-    <input type="text" class="form-control" placeholder="localidad" aria-label="localidad">
+    <input type="password" class="form-control" placeholder="password" aria-label="password" name= "password">
   </div>
-  
+  <div class="col">
+    <input type="number" class="form-control" placeholder="edad" aria-label="edad" name= "edad">
+  </div>
+  <div class="col">
+    <input type="text" class="form-control" placeholder="foto_perfil" aria-label="foto_perfil" name= "foto_perfil">
+  </div>
+  <div class="col">
+    <input type="submit" class="form-control" placeholder="enviar" aria-label="enviar">
+  </div>
 </div>
+</form>
 </div>

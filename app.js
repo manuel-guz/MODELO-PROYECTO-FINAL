@@ -3,7 +3,8 @@ const express = require('express');
 const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
-
+// requiere modulo para archivos .env
+require('dotenv').config();
 
 
 //configurar motor de vistas
@@ -21,8 +22,7 @@ const app = express();
 //se requiere la conexion a mysql2
 require('./connections/connection-mysql2');
 
-// requiere modulo para archivos .env
-require('dotenv').config();
+
 
 
 
