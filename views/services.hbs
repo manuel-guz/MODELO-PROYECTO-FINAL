@@ -1,17 +1,31 @@
 <h1>
-    Esta es la pagina de los servicios
+    Aca se muestran los usuarios que  se cargan en workbench!!
 </h1>
-
-<div class="sql">
-
-        {{#each result}}
-        
-                    <br>
-                    {{email}} <br>
-                    
-                    {{password}}
-                    
-        {{/each}}
-        
-    </div>
+<div class="login">
+<form  action="/services" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nombre">
+    <div id="emailHelp" class="form-text">Sus datos nunca seran compartidos a terceros</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Emali</label>
+    <input type="email" class="form-control" id="exampleInputPassword1" name="email">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name= "password">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Edad</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" name= "edad">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Nombre de usuario</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name= "foto_perfil">
+  </div>
+  
+    <button type="submit" class="btn btn-primary">Enviar consulta</button>
+  
+</form>
 </div>

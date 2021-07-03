@@ -1,32 +1,20 @@
 var express = require('express');
 var router = express.Router();
+//conexion a SQL
+const sqlcon= require('../connections/connection-mysql2');
 
-
-
-
-function User_generator (nombre, apellido, edad, redes, frase){
-    this.nombre = nombre
-    this.apellido = apellido
-    this.edad = edad
-    this.redes = redes
-    this.frase = frase
-    };
-
-let user1 = new User_generator('ale', 'guzman', '29', ['@janoguz'], 'holamundo');
-let user2 = new User_generator('nico', 'perez', '26', [], 'otrafrase');
-
-router.get
-
-const users =  [];
-
-users.push(user1, user2);
-
-
-
-/* GET home page. */
+/* ENVIO DE DATOS AL FRONT-END */
 router.get('/', function(req, res, next) {
-    res.render('clients', {title : "usuarios", users});
+  sqlcon.query('SELECT * FROM usuarios', (err, result) =>{
+    if (err) {
+      console.error(err);
+      res.render('error');
+    }
+    res.render('clients', {result: result}); // como es asincronico, el renderizado tiene que estar dentro del callback para que se renderise cuando los datos esten disponibles
+  });
+  
 });
+
 
 
 module.exports = router;

@@ -1,16 +1,30 @@
+
+html {
+  height: 100%;
+}
 body {
+  position: relative;
   background-color: rgb(245, 243, 243);
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   background-image: url(../images/BG1.jpg)  ;
   background-size: 100% ;
   background-repeat: no-repeat;
   backdrop-filter: blur(2px);
+  min-height: 100vh;
 }
 
-
+footer {
+  position:absolute;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
 .clients_table{
-  margin-right: 50%;
+  
+  max-width: 100vh;
+  padding-bottom: 5%;
 }
+
 .pagination-clients{
   margin-right: 50%;
 }
@@ -28,14 +42,13 @@ body {
 }
 
 .login{
-  margin-top: 20%;
+  margin-left: 5%;
+  margin-top: 5%;
   margin-right: 50%;
+  
+  padding-bottom: 10%;
 }
 
-#footer{
-  position:relative;
+.table{
   width: 100%;
-  bottom: 0%;
-  text-align: center;
-  
 }
