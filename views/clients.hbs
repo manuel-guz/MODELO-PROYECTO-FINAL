@@ -1,31 +1,39 @@
-<h1> Clientes totales</h1>
+<div class="client-text">
+<h1> Pedidos de clientes totales</h1>
+</div>
 
-<div class="clients_table">
-<table class="table">
+<p><strong>A continuación se muestran las WORK ORDERS de todos los clientes:</strong><p>
+
+
+<div id="clients_table">
+  <div class="table-responsive">
+<table class="table table-hover">
 <thead>
     <tr>
-      <th scope="col">#</th>
-      <th scope="col">email</th>
-      <th scope="col">password</th>
+      <th scope="col">id_cliente</th>
       <th scope="col">nombre</th>
-      <th scope="col">edad</th>
-      <th scope="col">Nombre de usuario</th>
+      <th scope="col">email</th>
+      <th scope="col">tipo de trabajo</th>
+      <th scope="col">fecha</th>
+      <th scope="col">telefono</th>
+      <th scope="col">id_user</th>
     </tr>
 </thead>
     <tbody>
     {{#each result}}
     <tr>
-        <th scope="row">{{id}}</th>
-        <td>{{email}} </td>
-        <td>{{password}}</td>
-        <td>{{nombre}}</td>
-        <td>{{edad}}</td>
-        <td>{{foto_perfil}}</td>
+        <th scope="row">{{id_cliente}}</th>
+        <td>{{nombre}} </td>
+        <td>{{email_cliente}}</td>
+        <td>{{tipo_trabajo}}</td>
+        <td>{{fecha}}</td>
+        <td>{{telefono}}</td>
+        <td>{{id_user}}</td>
     </tr>
     {{/each}}
     </tbody>
 </table>
-
+</div>
 
 
 <div class="pagination-clients">

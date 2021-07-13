@@ -13,8 +13,8 @@ const hbs=require('express-handlebars');
 
 // agregada las rutas a las diferentes paginas
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
 const servicesRouter = require('./routes/services');
+const workOrdersRouter = require('./routes/workOrders');
 const loginRouter = require('./routes/login');
 const clientsRouter = require('./routes/clients');
 const app = express();
@@ -50,9 +50,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 //midleware de rutas para las distintas paginas
 app.use('/', indexRouter);
-app.use('/users', usersRouter);
-app.use('/login', loginRouter);
 app.use('/services', servicesRouter);
+app.use('/login', loginRouter);
+app.use('/workOrders', workOrdersRouter);
 app.use('/clients', clientsRouter);
 
 // catch 404 and forward to error handler

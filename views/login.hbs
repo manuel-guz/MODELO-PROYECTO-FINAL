@@ -1,21 +1,32 @@
-
+<div class="login-text">
+<h1>Inicie sesión aquí!</h1>
+<p>Al iniciar sesión, podrá acceder a la sección de WORK ORDERS para generar un pedido de traduccion. En caso de ser parte del equipo Quokka, tambien podra acceder a la sección CLIENTS.</p>
+</div>
 
 <div class="login">
 <form action="/login" method="post">
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Nombre de usuario</label>
-    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name= "usuario">
     <div id="emailHelp" class="form-text">Ingrese su nombre de usuario.</div>
   </div>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">Email</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name = "email_user">
     <div id="emailHelp" class="form-text">Nunca compartiremos su email.</div>
   </div>
-  <div class="mb-3">
+  
+   <div class="mb-3">
     <label for="exampleInputPassword1" class="form-label">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1">
-  </div>
-  <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+    <input type="password" class="form-control" id="exampleInputPassword1" name= "contraseña">
+  </div>  
+
+
+<p>De ejemplo solo hay 3 usuarios cargado: <br>
+id:1 | usuario: berni | email: berni@berni.com | contraseña: berni <br> 
+id:2 | usuario: nico | email: nico@nico.com | contraseña: nico <br> 
+id:3 | usuario: dani | email: dani@dani.com | contraseña: dani <br>
+id:4 | usuario: admin | email: admin@admin.com | contraseña: admin <br> </p>
+  <button type="submit" class="btn btn-primary">Iniciar sesion</button> 
 </form>
 </div>

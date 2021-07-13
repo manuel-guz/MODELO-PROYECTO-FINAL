@@ -1,0 +1,27 @@
+body {
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+    background-image: url(../images/BG1.jpg);
+    background-size: 100% 100% ;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+
+  footer {
+    color: darkgrey;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+  }
+
+  h2{
+      margin-left: 2%;
+  }
+
+  .workOrders-form{
+   
+      margin: 2% 50% 1% 2%;
+      padding-bottom: 5%;
+  }

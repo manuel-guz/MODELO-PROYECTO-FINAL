@@ -1,0 +1,37 @@
+<h2>
+    Cargue la petción de traducción a continuación:
+</h2>
+<div class="workOrders-form">
+<form  action="/workOrders" method="post">
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="nombre">
+    
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Email</label>
+    <input type="email" class="form-control" id="exampleInputPassword1" name="email_cliente">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Tipo de trabajo</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="tipo_trabajo">
+    
+  </div>
+  
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Fecha</label>
+    <input type="date" class="form-control" id="exampleInputPassword1" name= "fecha">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Telefono</label>
+    <input type="text" class="form-control" id="exampleInputPassword1" name= "telefono">
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">ID (Berni: 1, Nico: 2, Dani:3.)</label>
+    <input type="number" class="form-control" id="exampleInputPassword1" name= "id_fk">
+  </div> 
+  
+    <button type="submit" class="btn btn-primary">Enviar consulta</button>
+  
+</form>
+</div>
