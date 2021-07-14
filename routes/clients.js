@@ -8,12 +8,14 @@ router.get('/', function(req, res, next) {
 
   
   sqlcon.query('SELECT * FROM WO', (err, result) =>{
-    if (err) {
-      console.error(err);
-      res.render('error');
-    }
+    
+    
     res.render('clients', {result: result, layout:"clients-layout.hbs"}); // como es asincronico, el renderizado tiene que estar dentro del callback para que se renderise cuando los datos esten disponibles
+    
+    
   });
+  
+  
   
 });
 
