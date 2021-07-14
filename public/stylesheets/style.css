@@ -14,13 +14,6 @@ body {
   min-height: 100vh;
 }
 
-footer {
-  color: darkgrey;
-  position:absolute;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
 
 .index-text{
   /*margin-right: 50%;*/
@@ -29,24 +22,15 @@ footer {
   text-align: center;
   margin-left: 5%;
   margin-right: 5%;
+  padding-bottom: 10%;
   
   
 }
 
 
-@media (max-width: 800px){
   
-
-  .carousel-index{
-    
-    margin: 1% 1%;
-    align-content: center;
-    width: 30%;
-    height: 20%;
-  }
   
-  }
-.carousel-index{
+.carousel-index1{
   float: left;
   margin: 1% 1%;
   align-content: center;
@@ -54,8 +38,31 @@ footer {
   height: 20%;
 }
 
+.carousel-index2{
+  float: left;
+  margin: 1% 1%;
+  align-content: center;
+  width: 30%;
+  height: 20%;
+}
 
+.carousel-index3{
+  float:left;
+  margin: 1% 1% ;
+  align-content: center;
+  width: 30%;
+  height: 20%;
+}
 
+footer {
+  display:inline-block;
+  color: darkgrey;
+  position:relative;
+  bottom: 100vh;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
 .success{
   margin-top: 10%;
     text-align: center;
