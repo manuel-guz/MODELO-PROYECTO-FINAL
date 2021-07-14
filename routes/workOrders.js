@@ -13,7 +13,10 @@ router.post('/', (req,res) =>{
   const body = req.body;
 
 sqlcon.query(`INSERT INTO WO VALUES (null, '${body.nombre}', '${body.email_cliente}', '${body.tipo_trabajo}', '${body.fecha}', '${body.telefono}', '${body.id_fk}')`,(error, result)=>{ //generalmente aca tiene que haber la misma cantidad de columnas que en sql, el cliente puede llenarlas todas o no
-  
+  if(error){
+    console.error(error);
+  };
+
   sqlcon.on('end', function() {
     console.log('query finalizada');   //finalizo la petision query para que se pueda realizar otra nuevamente
   });

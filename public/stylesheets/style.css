@@ -10,11 +10,21 @@ body {
   background-image: url(../images/paisaje-montañas.jpg);
   background-size: 100% 100% ;
   background-repeat: no-repeat;
-  /*  backdrop-filter: blur(2px);*/
-  min-height: 100vh;
+  min-height:100vh;
+}
+.todo-prueba{
+  display:inline-block;
 }
 
-
+footer {
+  
+  color: darkgrey;
+  position:absolute;
+  bottom: 100vh;
+  width: 100%;
+  bottom: 0%;
+  text-align: center;
+}
 .index-text{
   /*margin-right: 50%;*/
 
@@ -54,15 +64,6 @@ body {
   height: 20%;
 }
 
-footer {
-  display:inline-block;
-  color: darkgrey;
-  position:relative;
-  bottom: 100vh;
-  width: 100%;
-  bottom: 0;
-  text-align: center;
-}
 .success{
   margin-top: 10%;
     text-align: center;
